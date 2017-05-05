@@ -78,10 +78,6 @@ if ($sesi_username != NULL || !empty($sesi_username)) {
 	<title>Penerimaan Peserta Didik Baru SMK Negeri Kembang Resik Tahun Pelajaran 2017/2018</title>
 	
 	<link rel="stylesheet" href="css/layout.css" type="text/css" media="screen" />
-	<!--[if lt IE 9]>
-	<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" />
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
 	<script src="js/jquery-1.5.2.min.js" type="text/javascript"></script>
 	<script src="js/hideshow.js" type="text/javascript"></script>
 	<script src="js/jquery.tablesorter.min.js" type="text/javascript"></script>
@@ -189,10 +185,7 @@ if ($sesi_username != NULL || !empty($sesi_username)) {
 		<ul class="toggle">
 			<li class="icn_folder"><a href="?p=bnr">Backup Restore Data</a></li>
 			<li class="icn_folder"><a href="?p=ke_excel_att" onclick="return buka('ke_excel.php');">Eksport ke Excel</a></li>
-			<!--
-			<li class="icn_audio"><a href="#">Audio</a></li>
-			<li class="icn_video"><a href="#">Video</a></li>
-			-->
+		
 		</ul>
 		<h3>Admin</h3>
 		<ul class="toggle">
