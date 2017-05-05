@@ -1,9 +1,8 @@
-/* tampilan sudah di rubah */
+/* layout fix */
 
 html, div, map, dt, isindex, form, header, aside, section, section, article, footer {  
     display: block;  
 } 
-
 
 html, body {
 height: 100%;
@@ -21,7 +20,6 @@ clear: both;
 .spacer {
 height: 20px;
 }
-
 
 a:link, a:visited {
 color: #77BACE;
