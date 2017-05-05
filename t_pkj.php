@@ -5,12 +5,15 @@
 		if ($mod == "del") {
 			$q_delete_pkj = mysql_query("DELETE FROM t_pkj WHERE id_pkj = '$id_pkj'");
 			if ($q_delete_pkj) {
+				
 				echo "<h4 class='alert_success'>Data berhasil dihapuskan<span id='close'>[<a href='#'>X</a>]</span></h4>";
+			
 			} else {
+				
 				echo "<h4 class='alert_error'>".mysql_error()."<span id='close'>[<a href='#'>X</a>]</span></h4>";
 			}
 		}
-		
+	
 		// ================ DATA FORM ( POST ) =====================//
 		$display 		= "style='display: none'"; 	//default = formnya dihidden
 		$tb_act 		= isset($_POST['tb_act']) ? $_POST['tb_act'] : NULL;				//ambil variabel POST value Tombol FOrm
@@ -74,6 +77,7 @@
 			$q_edit_pkj	= mysql_query("SELECT * FROM t_pkj WHERE id_pkj = '$id_pkj'");
 			$a_edit_pkj	= mysql_fetch_array($q_edit_pkj);
 			
+			
 			$nama_pkj = $a_edit_pkj[1];
 			$view = "Edit";
 			
@@ -87,6 +91,7 @@
 		}
 
 		?>
+
 
 <article class="module width_full" <?php echo $display;?>>
 	<header><h3><?php echo $view;?> Data Pekerjaan</h3></header>
